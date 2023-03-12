@@ -1,0 +1,66 @@
+.sidebar-wide {
+    /* background-color: lightcoral; */
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 240px;
+    z-index: 100;
+    color: white;
+    padding-left: 25px;
+    border-right-color: rgb(31, 31, 31);
+    border-right-width: 1px;
+    border-right-style: solid;
+}
+
+.sidebar-logo {
+    padding-left: 8px;
+    padding-bottom: 60px;
+    padding-top: 25px;
+}
+
+.channel-picture {
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+}
+
+.sidebar-icon {
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+    margin-right: 15px
+}
+
+.sidebar-row img {
+    margin-right: 15px
+}
+
+.sidebar-row,
+.sidebar-last-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 22px;
+
+}
+
+.sidebar-row .tooltip {
+    position: relative;
+}
+
+
+.sidebar-row .red-icon {
+    position: absolute;
+    background-color: rgb(255, 60, 60);
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    top: 0px;
+    right: 15px;
+
+}
+
+
+.sidebar-last-row {
+    margin-top: 90px;
+}
