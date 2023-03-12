@@ -2,17 +2,20 @@
 <html>
 
 <head>
-    <title>TEST</title>
+    <title>Graphic Design</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/general.css">
     <link rel="stylesheet" href="styles/slidebar.css">
+    <link rel="stylesheet" href="styles/navigation-menu.css">
+    <link rel="stylesheet" href="styles/main-section.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="events.js">
 </head>
 
 
-</head>
 
 <body>
 
@@ -20,7 +23,7 @@
 
     <header class="user-profile-flex">
         <div class="profile-picture">
-            <img class="profile-picture" src="page-pictures/cute-banny.jpeg">
+            <img class="profile-picture" src="page-pictures/cute-banny.jpeg" title="Change profile photo">
         </div>
         <div class="user-information-flex">
             <div class="first-row">
@@ -29,7 +32,9 @@
                 </p>
                 <button> Edit Profile</button>
                 <button>Add tools</button>
-                <img src>
+                <button class="settings-button">
+                    <img src="icons/settings-icon.jpg">
+                </button>
             </div>
             <div class="second-row">
                 <p>10 posts</p>
@@ -41,17 +46,17 @@
                 <p class="user-activity">Digital creator</p>
                 <p class="user-bio">I Create Digital Illustrations,
                     Portraits and More</p>
-                <link
-                    href="https://l.instagram.com/?u=https%3A%2F%2Fwww.tiktok.com%2F%40art_graphic_design%3F_t%3D8YB2eV0xCIj%26_r%3D1&e=AT2qxAs-lFSDtGvolYOxhvE4Kow6-LjeDmiiItIK4ihgfT_vxGnmOuZzcoN401rCsEq5cExmVX8U6rIv6znf9f4Ixpmb7fR1HyTnTj8">
+                <a class="tiktok-link" href="https://www.tiktok.com/@art_graphic_design?_t=8YB2eV0xCIj&_r=1">
+                    www.tiktok.com</a>
             </div>
         </div>
     </header>
 
-    <!-- slidebar -->
+    <!-- sidebar -->
 
     <nav class="sidebar-wide">
         <div class="sidebar-logo">
-            <img src="icons/logo.jpg">
+            <img src="icons/Graphic Design (@_art_graphic_design) • Instagram photos and videos-0.svg">
         </div>
         <div class="sidebar-row">
             <img class="sidebar-icon" src="icons/home.jpg">
@@ -92,31 +97,96 @@
             More
         </div>
     </nav>
+
+    <!-- main section, menu -->
+
     <main>
         <section>
             <div class="menu-navigation">
-                <div>
+                <div class="part-navigation">
                     <img class="menu-navigation-icon" src="icons/reels.jpg">
                     <p> POSTS</p>
                 </div>
-                <div>
+                <div class="part-navigation">
                     <img class="menu-navigation-icon" src="icons/reels.jpg">
                     <p> REELS</p>
                 </div>
-                <div>
-                    <img class="menu-navigation-icon" src>
+                <div class="part-navigation">
+                    <img class="menu-navigation-icon" src="icons/reels.jpg">
                     <p> SAVED</p>
                 </div>
-                <div>
-                    <img class="menu-navigation-icon" src>
+                <div class="part-navigation">
+                    <img class="menu-navigation-icon" src="icons/reels.jpg">
                     <p> TAGGED</p>
                 </div>
+            </div>
+
+            <!-- main section, pictures grid -->
+
+            <div class="pictures-grid">
+                <div class="one-picture">
+                    <img src="page-pictures/DESIGN.png">
+                </div>
+                <div class="one-picture">
+                    <img src="page-pictures/3D letters.png">
+                </div>
+                <div class="one-picture">
+                    <img src="page-pictures/DUN2.png">
+                </div>
+                <div class="one-picture">
+                    <img src="page-pictures/DUN2.png">
+                </div>
+                <div class="one-picture">
+                    <img src="page-pictures/TYHE BEST DESIGN.png">
+                </div>
+                <div class="one-picture">
+                    <img src="page-pictures/IMG_4900.JPG">
+                </div>
+                <div class="one-picture">
+                    <img src="page-pictures/cute-banny.jpeg">
+                </div>
+                <div class="one-picture">
+                    <img src="page-pictures/IMG_4888.JPG">
+                </div>
+                <div class="one-picture">
+                    <img src="page-pictures/IMG_4877.JPG">
+                </div>
+                <div class="one-picture">
+                    <img src="page-pictures/IMG_4900.JPG">
+                </div>
+
             </div>
 
             <!-- <img class="refference-picture" src="page-pictures/ref.jpg"> -->
         </section>
     </main>
-    <footer></footer>
+    <footer>
+        <div class="contact-info-flex">
+            <a>Meta</a>
+            <a>About</a>
+            <a>Blog</a>
+            <a>Jobs</a>
+            <a>Help</a>
+            <a>API</a>
+            <a>Privacy</a>
+            <a>Terms</a>
+            <a>Top Accounts</a>
+            <a>Locations</a>
+            <a>Instagram Lite</a>
+            <a>Contact Uploading & Non-Users</a>
+            <a>Digital Collectibles Privacy Notice</a>
+            <a>Meta Verified</a>
+        </div>
+        <div class="contact-info-second-row">
+            <select class="language-selector">
+                <option value="English">English</option>
+                <option value="French">French</option>
+                <option value="Russian">Russian</option>
+                <option value="German">German</option>
+            </select>
+            <a> &#169 2023 Instagram from Meta</a>
+        </div>
+    </footer>
 </body>
 
 </html>

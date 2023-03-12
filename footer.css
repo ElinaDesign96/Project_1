@@ -1,0 +1,27 @@
+.contact-info-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: grey;
+    font-size: 12px;
+    padding: 20px 200px;
+}
+
+.contact-info-second-row {
+    color: grey;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 500px;
+    font-size: 12px;
+}
+
+.language-selector {
+    background: none;
+    border: none;
+    color: grey;
+    margin-right: 5px;
+    width: auto;
+    font-size: 12px;
+}

@@ -1,0 +1,28 @@
+.menu-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin: 15px 200px 15px 200px;
+    border-top-color: rgb(48, 48, 48);
+    border-top-style: solid;
+    border-top-width: 1px;
+    padding-top: 20px;
+}
+
+.part-navigation {
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    margin-left: 45px;
+    color: grey;
+    font-size: 14px;
+    /* font-weight: 500; */
+}
+
+.part-navigation img {
+    width: 15px;
+    height: 15px;
+    margin-right: 8px;
+}

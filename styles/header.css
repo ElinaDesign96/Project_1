@@ -3,21 +3,42 @@
     align-items: center;
     /* justify-content: center; */
     /* background-color: aquamarine; */
-    padding-left: 250px;
-    margin-left: 25px;
-
+    padding-left: 240px;
+    margin-left: 45px;
+    margin-bottom: 30px;
+    margin-top: 25px;
 }
 
 .user-information-flex {
-    margin-left: 80px;
-    margin-top: 50px;
+    margin-left: 100px;
 }
 
 .profile-picture {
     width: 150px;
     height: 150px;
     border-radius: 80px;
+    position: relative;
+    cursor: pointer;
 }
+
+/* .tooltip-profile-picture {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(37, 37, 37);
+    border-color: white;
+    border-style: solid;
+    border-width: 1px;
+    padding: 4px 8px;
+    font-size: 12px;
+    color: white;
+    opacity: 0;
+
+}
+
+.profile-picture:hover .tooltip-profile-picture {
+    opacity: 1;
+} */
 
 .first-row {
     display: flex;
@@ -27,16 +48,15 @@
     justify-content: space-between;
 
     /* background-color: lightpink; */
-    margin-bottom: 20px;
+    margin-bottom: 14px;
     color: white;
 }
 
 .first-row .user-name {
     font-size: 18px;
-    font-weight: bold;
     margin-right: 15px;
-}
 
+}
 
 .first-row button {
     color: black;
@@ -49,12 +69,27 @@
     margin-left: 8px;
 }
 
+.first-row .settings-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+}
+
+.settings-button img {
+    width: 30px;
+    margin-left: -15px;
+    margin-top: -5px;
+}
+
 .second-row {
     display: flex;
     align-items: stretch;
     justify-content: space-between;
     color: white;
-    margin-bottom: 26px;
+    margin-bottom: 20px;
+    padding: 0 100px 0 0;
 
 }
 
@@ -64,22 +99,32 @@
     justify-content: space-between;
     color: white;
     margin-bottom: 8px;
-    flex-direction: column
+    flex-direction: column;
+
 }
 
 .user-description p {
-    margin-bottom: 2px;
+    margin-bottom: 0px;
 }
 
 .user-description .user-name-title {
     font-weight: bold;
+    font-size: 14px;
 }
 
 .user-description .user-activity {
     color: grey;
+    font-size: 14px;
+
 }
 
 .user-description .user-bio {
+    font-size: 14px;
+}
+
+.tiktok-link {
+    text-decoration: none;
+    color: white;
     font-size: 14px;
 }
 
