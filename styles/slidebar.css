@@ -1,101 +1,122 @@
 .sidebar-wide {
-    /* background-color: lightcoral; */
     position: fixed;
     left: 0;
     top: 0;
     bottom: 0;
-    width: 230px;
+    width: 16%;
     z-index: 100;
-    color: white;
     border-right-color: rgb(31, 31, 31);
     border-right-width: 1px;
     border-right-style: solid;
     background-color: black;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px 1%;
 }
 
-.sidebar-logo {
-    padding-left: 30px;
-    padding-bottom: 40px;
-    padding-top: 40px;
+.instagram-logo {
     width: 100px;
+    display: block;
+}
+
+.sidebar-wide a {
+    padding-left: 16px;
+}
+
+
+.sidebar-logo #menu-icon {
     cursor: pointer;
+    display: none;
 }
 
-.channel-picture {
-    width: 25px;
-    height: 25px;
-    border-radius: 15px;
-    margin-left: 20px;
-    border-style: solid;
-    border-width: 2px;
-    border-color: white;
+.navlist {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.sidebar-icon {
+.sidebar-row,
+.sidebar-last-row {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 8px 0;
+    border-radius: 24px;
+    width: auto;
+    transition: background-color 0.3s;
+    padding-left: 4%;
+    margin: 4px;
+}
+
+.sidebar-row:hover,
+.sidebar-last-row:hover,
+.menu-icon:hover {
+    background-color: rgb(23, 23, 23);
+}
+
+
+.sidebar-row:hover .menu-icon,
+.sidebar-last-row:hover .menu-icon,
+.menu-icon:hover {
+    transform: scale(1.1);
+    transition: transform 0.1s;
+    transition-timing-function: ease;
+}
+
+
+.menu-icon {
+    font-size: 30px;
+    position: relative;
+    /* transition: transform 0.1s;
+    transition-timing-function: ease; */
+}
+
+
+.sidebar-profile-picture {
     width: 30px;
     height: 30px;
-    object-fit: cover;
-    margin-right: 15px;
-    padding-left: 20px;
+    border-radius: 15px;
 }
 
-.sidebar-row img {
-    margin-right: 15px;
-
-}
-
-.sidebar-row {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-    cursor: pointer;
-    height: 45px;
-    border-radius: 20px;
-    margin-right: 20px;
-    width: 90%;
-    transition: background-color 0.3s;
-
-}
-
-.sidebar-row:hover {
-    background-color: rgba(28, 28, 28, 0.9);
-}
-
-.sidebar-last-row {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    height: 45px;
-    border-radius: 20px;
-    transition: background-color 0.3s;
-    position: absolute;
-    bottom: 2%;
-    width: 90%;
-
-}
-
-.sidebar-last-row:hover {
-    background-color: rgba(28, 28, 28, 0.9);
-}
-
-.sidebar-row .tooltip {
-    position: relative;
-}
-
-
-.sidebar-row .red-icon {
+.red-icon {
     position: absolute;
     background-color: rgb(255, 60, 60);
-    width: 10px;
-    height: 10px;
+    width: 8px;
+    height: 8px;
     border-radius: 5px;
-    top: 0px;
-    right: 15px;
-
+    top: 1px;
+    right: 1px;
 }
 
+@media (max-width:750px) {
+    .sidebar-wide {
+        /* display: none; */
+        visibility: collapse;
+    }
+}
 
-.sidebar-last-row {
-    margin-top: 90px;
+@media (min-width: 750.02px) and (max-width: 1000px) {
+    .sidebar-wide {
+        width: auto;
+
+
+    }
+
+    .sidebar-wide p {
+        display: none;
+    }
+
+    .sidebar-logo {
+        width: 0;
+    }
+
+    .sidebar-row {
+        margin: 0 5px;
+    }
+
+    .sidebar-icon {
+        padding-left: 5px;
+    }
+
 }

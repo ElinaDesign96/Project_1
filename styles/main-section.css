@@ -1,11 +1,18 @@
 .pictures-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    margin-left: 200px;
-    margin-right: 200px;
+    /* padding-left: 200px;
+    padding-right: 200px; */
     column-gap: 24px;
     row-gap: 24px;
     margin-top: 0px;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.one-picture {
+    position: relative;
+    cursor: pointer;
 }
 
 .one-picture img {
@@ -13,4 +20,38 @@
     height: 293px;
     object-fit: cover;
     background-color: white;
+}
+
+.likes-comments-tooltip {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    position: absolute;
+    left: 33%;
+    right: 33%;
+    bottom: 50%;
+    top: 50%;
+    font-weight: 500;
+    opacity: 0;
+}
+
+.likes-comments-tooltip div {
+    display: flex;
+    align-items: center;
+    width: 35px;
+    justify-content: space-between;
+}
+
+#tooltip-icon {
+    font-size: 24px;
+    font-style: solid;
+}
+
+.one-picture:hover>img {
+    opacity: 0.5;
+}
+
+.one-picture:hover .likes-comments-tooltip {
+    opacity: 1;
 }

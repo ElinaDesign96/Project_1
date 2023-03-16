@@ -3,6 +3,11 @@
 
 <head>
     <title>Graphic Design</title>
+    <!-- boxicons -->
+    <link rel="stylesheet" href="boxicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- remixicons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
@@ -52,51 +57,65 @@
         </div>
     </header>
 
-    <!-- sidebar -->
-
     <nav class="sidebar-wide">
-        <div class="sidebar-logo">
-            <img src="icons/Graphic Design (@_art_graphic_design) • Instagram photos and videos-0.svg">
-        </div>
-        <div class="sidebar-row">
-            <img class="sidebar-icon" src="icons/home.jpg">
-            <p>Home</p>
-        </div>
-        <div class="sidebar-row">
-            <img class="sidebar-icon" src="icons/search.jpg">
-            Search
-        </div>
-        <div class="sidebar-row">
-            <img class="sidebar-icon" src="icons/explore.jpg">Explore
-        </div>
-        <div class="sidebar-row">
-            <img class="sidebar-icon" src="icons/reels.jpg">
-            Reels
-        </div>
-        <div class="sidebar-row">
-            <img class="sidebar-icon" src="icons/messages.jpg">
-            Messages
-        </div>
-        <div class="sidebar-row">
-            <div class="tooltip">
-                <img class="sidebar-icon" src="icons/notifications.jpg">
-                <div class="red-icon"></div>
+        <a href="#" class="sidebar-logo">
+            <img class="instagram-logo"
+                src="icons/Graphic Design (@_art_graphic_design) • Instagram photos and videos-0.svg">
+            <div class="bx bxl-instagram" id="menu-icon"></div>
+        </a>
+
+        <ul class="navlist">
+            <div class="sidebar-row">
+                <div class="bx bx-home menu-icon">
+                </div>
+                <li><a href="#">Home</a></li>
             </div>
-            <a> Notifications</a>
-        </div>
-        <div class="sidebar-row">
-            <img class="sidebar-icon" src="icons/create.jpg">
-            Create
-        </div>
-        <div class="sidebar-row">
-            <img class="channel-picture" src="page-pictures/cute-banny.jpeg">
-            Profile
-        </div>
+            <div class="sidebar-row">
+                <div class="bx bx-search menu-icon">
+                </div>
+                <li><a href="#">Search</a></li>
+            </div>
+            <div class="sidebar-row">
+                <div class="bx bx-compass menu-icon">
+                </div>
+                <li><a href="#">Explore</a></li>
+            </div>
+            <div class="sidebar-row">
+                <div class="bx bx-movie-play menu-icon">
+                </div>
+                <li><a href="#">Reels</a></li>
+            </div>
+            <div class="sidebar-row">
+                <div class="bx bx-message-rounded menu-icon">
+                </div>
+                <li><a href="#">Messages</a></li>
+            </div>
+            <div class="sidebar-row">
+                <div class="bx bx-heart menu-icon">
+                    <div class="red-icon"></div>
+                </div>
+                <li><a href="#">Notifications</a></li>
+            </div>
+            <div class="sidebar-row">
+                <i class="ri-add-box-line menu-icon">
+                </i>
+                <li><a href="#">Create</a></li>
+            </div>
+            <div class="sidebar-row">
+                <img class="sidebar-profile-picture" src="page-pictures/cute-banny.jpeg" id="menu-icon">
+                <li><a href="#">Profile</a></li>
+            </div>
+
+        </ul>
+
         <div class="sidebar-last-row">
-            <img class="sidebar-icon" src="icons/burger menu.jpg">
-            More
+            <div class="bx bx-menu" id="menu-icon">
+            </div>
+            <li><a href="#">More</a></li>
         </div>
+
     </nav>
+
 
     <!-- main section, menu -->
 
@@ -105,7 +124,7 @@
             <div class="menu-navigation">
                 <div class="part-navigation">
                     <img class="menu-navigation-icon" src="icons/reels.jpg">
-                    <p> POSTS</p>
+                    <p> POSTS </a>
                 </div>
                 <div class="part-navigation">
                     <img class="menu-navigation-icon" src="icons/reels.jpg">
@@ -126,33 +145,133 @@
             <div class="pictures-grid">
                 <div class="one-picture">
                     <img src="page-pictures/DESIGN.png">
+                    <div class="likes-comments-tooltip">
+                        <div>
+                            <div class="bx bx-heart" id="tooltip-icon"> </div>
+                            <p>4</p>
+                        </div>
+                        <div>
+                            <div class="bx bx-message-rounded" id="tooltip-icon"> </div>
+                            <p>1</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="one-picture">
                     <img src="page-pictures/3D letters.png">
+                    <div class="likes-comments-tooltip">
+                        <div>
+                            <div class="bx bx-heart" id="tooltip-icon"> </div>
+                            <p>6</p>
+                        </div>
+                        <div>
+                            <div class="bx bx-message-rounded" id="tooltip-icon"> </div>
+                            <p>0</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="one-picture">
                     <img src="page-pictures/DUN2.png">
+                    <div class="likes-comments-tooltip">
+                        <div>
+                            <div class="bx bx-heart" id="tooltip-icon"> </div>
+                            <p>4</p>
+                        </div>
+                        <div>
+                            <div class="bx bx-message-rounded" id="tooltip-icon"> </div>
+                            <p>0</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="one-picture">
                     <img src="page-pictures/DUN2.png">
+                    <div class="likes-comments-tooltip">
+                        <div>
+                            <div class="bx bx-heart" id="tooltip-icon"> </div>
+                            <p>5</p>
+                        </div>
+                        <div>
+                            <div class="bx bx-message-rounded" id="tooltip-icon"> </div>
+                            <p>0</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="one-picture">
                     <img src="page-pictures/TYHE BEST DESIGN.png">
+                    <div class="likes-comments-tooltip">
+                        <div>
+                            <div class="bx bx-heart" id="tooltip-icon"> </div>
+                            <p>4</p>
+                        </div>
+                        <div>
+                            <div class="bx bx-message-rounded" id="tooltip-icon"> </div>
+                            <p>0</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="one-picture">
                     <img src="page-pictures/IMG_4900.JPG">
+                    <div class="likes-comments-tooltip">
+                        <div>
+                            <div class="bx bx-heart" id="tooltip-icon"> </div>
+                            <p>8</p>
+                        </div>
+                        <div>
+                            <div class="bx bx-message-rounded" id="tooltip-icon"> </div>
+                            <p>0</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="one-picture">
                     <img src="page-pictures/cute-banny.jpeg">
+                    <div class="likes-comments-tooltip">
+                        <div>
+                            <div class="bx bx-heart" id="tooltip-icon"> </div>
+                            <p>6</p>
+                        </div>
+                        <div>
+                            <div class="bx bx-message-rounded" id="tooltip-icon"> </div>
+                            <p>3</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="one-picture">
                     <img src="page-pictures/IMG_4888.JPG">
+                    <div class="likes-comments-tooltip">
+                        <div>
+                            <div class="bx bx-heart" id="tooltip-icon"> </div>
+                            <p>9</p>
+                        </div>
+                        <div>
+                            <div class="bx bx-message-rounded" id="tooltip-icon"> </div>
+                            <p>0</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="one-picture">
                     <img src="page-pictures/IMG_4877.JPG">
+                    <div class="likes-comments-tooltip">
+                        <div>
+                            <div class="bx bx-heart" id="tooltip-icon"> </div>
+                            <p>5</p>
+                        </div>
+                        <div>
+                            <div class="bx bx-message-rounded" id="tooltip-icon"> </div>
+                            <p>0</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="one-picture">
                     <img src="page-pictures/IMG_4900.JPG">
+                    <div class="likes-comments-tooltip">
+                        <div>
+                            <div class="bx bxs-heart" type="solid" id="tooltip-icon"> </div>
+                            <p>3</p>
+                        </div>
+                        <div>
+                            <div class="bx bx-message-rounded" id="tooltip-icon"> </div>
+                            <p>0</p>
+                        </div>
+                    </div>
                 </div>
 
             </div>

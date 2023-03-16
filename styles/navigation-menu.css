@@ -3,12 +3,13 @@
     align-items: center;
     justify-content: center;
     color: white;
-    margin: 15px 200px 15px 200px;
+    /* margin: 15px 200px 15px 200px; */
     border-top-color: rgb(48, 48, 48);
     border-top-style: solid;
     border-top-width: 1px;
-    padding-top: 20px;
+    padding: 20px 20px;
 }
+
 
 .part-navigation {
     display: flex;
@@ -19,7 +20,9 @@
     color: grey;
     font-size: 14px;
     /* font-weight: 500; */
+    cursor: pointer;
 }
+
 
 .part-navigation img {
     width: 15px;

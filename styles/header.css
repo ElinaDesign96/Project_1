@@ -1,16 +1,18 @@
 .user-profile-flex {
     display: flex;
     align-items: center;
-    /* justify-content: center; */
+    justify-content: center;
     /* background-color: aquamarine; */
-    padding-left: 240px;
+    /* padding-left: 240px;
     margin-left: 45px;
     margin-bottom: 30px;
-    margin-top: 25px;
+    margin-top: 25px; */
+
+    padding: 40px 50px;
 }
 
 .user-information-flex {
-    margin-left: 100px;
+    margin-left: 15%;
 }
 
 .profile-picture {
@@ -101,6 +103,7 @@
     margin-bottom: 8px;
     flex-direction: column;
 
+
 }
 
 .user-description p {
@@ -126,12 +129,4 @@
     text-decoration: none;
     color: white;
     font-size: 14px;
-}
-
-.refference-picture {
-    width: 500px;
-    height: 500px;
-    object-fit: contain;
-    margin-top: 0;
-    background-color: bisque;
 }
